@@ -14,37 +14,60 @@ function check(){
 	if (q1 == "TL"){
 		correct++;
 	}
-	if (q1 == "TSM"){
+	if (q2 == "TSM"){
 		correct++;
 	}
-	if (q1 == "EG"){
+	if (q3 == "EG"){
 		correct++;
 	}
-	if (q1 == "C9"){
+	if (q4 == "C9"){
 		correct++;
 	}
-	if (q1 == "GG"){
+	if (q5 == "GG"){
 		correct++;
 	}
-	if (q1 == "100"){
+	if (q6 == "100"){
 		correct++;
 	}
-	if (q1 == "FQ"){
+	if (q7 == "FQ"){
 		correct++;
 	}
-	if (q1 == "CLG"){
+	if (q8 == "CLG"){
 		correct++;
 	}
-	if (q1 == "DIG"){
+	if (q9 == "DIG"){
 		correct++;
 	}
-	if (q1 == "IMT"){
+	if (q10 == "IMT"){
 		correct++;
 	}
 
-var meddelanden = ["Perfekt", "Bra jobbat", "Det var ok", "Du gjorde testet antat jag"];
+var meddelanden = ["Perfekt", "Bra jobbat", "Det var ok", "Du gjorde testet iallafall"];
 var bild = ["img/20.jpg", "img/22.jpg", "img/23.jpg", "img/21.jpg"]
 
+var range;
+var score;
+	
+	if (correct < 8){
+		range = 3;
+		score = 3;
+	}
+	if (correct < 5 && correct > 9){
+		range = 2;
+		score = 2;
+	}
+	if (correct < 2 && correct > 6){
+		range = 1;
+		score = 1;
+	}
+	if (correct > 3){
+		range = 0;
+		score = 0;
+	}
+
 	document.getElementById("after_submit").style.visibility = "visible";
+
+	document.getElementById("message").innerHTML = meddelanden[range];
 	document.getElementById("number_correct").innerHTML = "Du fick " + correct + " rätt av 10"
+	document.getElementById("picture").src = bild[score];
 }

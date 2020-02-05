@@ -1,0 +1,6 @@
+Att göra lista:
+1. Stava rätt på frågorna    KLAR
+1.5 Fixa en bild till resultatet KLAR
+2. Göra den snyggare
+3. Göra den responsiv
+4. 'göra så resultatet "poppar fram"
