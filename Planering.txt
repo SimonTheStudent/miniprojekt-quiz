@@ -1,0 +1,10 @@
+Tidsplanering
+1. Ta bootstrap grundkod och komma på frågor 1-1,5 timmar
+2. Se videor för att förstå hur maan gör ett quiz 1 timme
+3. Koda 3-4 timmar
+4. Rätta fel 1 timme
+
+Källor:
+Bootstrap
+De videor som delas i uppgiften (mest https://www.youtube.com/watch?v=C7NsIRhoWuE&feature=youtu.be)
+Video om hur man gör ett formulär av Fredrik Johansson
