@@ -1,0 +1,2 @@
+Bugfix:
+1. Resultatet visas på fel plats 
